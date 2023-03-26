@@ -1,0 +1,23 @@
+<!-- <p>seller-add-product works!</p> -->
+
+<div class="add-product">
+  <h1 style="color: blueviolet;">Add New Product</h1>
+  <p class="p_massage">  {{addProductMassage}} </p>
+
+  <form #addProduct="ngForm" (ngSubmit)="addProducts(addProduct.value)" class="common-form">
+
+  <input type="text" class="form-input" placeholder="Enter the Product Name" name="name" ngModel>
+  <input type="text" class="form-input" placeholder="Enter the Product Price" name="price" ngModel>
+  <input type="text" class="form-input" placeholder="Enter the Product Color" name="color" ngModel>
+  <input type="text" class="form-input" placeholder="Enter the Product Catagory" name="catagory" ngModel>
+  <textarea type="text" class="form-input" placeholder="Enter the Product Descreption" name="descreption" ngModel></textarea>
+  <input type="text" class="form-input" placeholder="Enter the Product Image Url" name="image" ngModel>
+
+  <button class="form-button" >Add Product</button>
+
+
+
+
+  </form>
+
+</div>

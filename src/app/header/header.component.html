@@ -1,0 +1,60 @@
+<nav class="nav">
+
+<h1 a class="namelogo btn btn-primery"  routerLink="/">E-COM</h1>
+<div class="nav-search" *ngIf="menuType=='default' || 'user' ">
+
+  <input type="text" #search  (keyup)="searchData($event)" (blur)="hideSearch()" placeholder="Search for Products"/>
+  <button (click)="submitSearch(search.value)"><fa-icon [icon]="searchSymbol"></fa-icon> Search</button>
+
+</div>
+
+<div [ngSwitch]="menuType">
+
+  <ul *ngSwitchCase="'default'">
+  <li><a routerLink="/"> Home</a></li>
+  <li><a routerLink="/seller-auth">Seller</a> </li>
+  <li><a routerLink="/user-auth"> Login/Signup </a></li>
+  <li><a routerLink="/"> Cart({{cartItem}})</a></li>
+
+</ul>
+
+
+<ul *ngSwitchCase="'user'">
+  <li><a routerLink="/"> Home</a></li>
+  <li><a routerLink="/seller-auth">Seller</a> </li>
+  <li><a (click)="userLogout()" class="logout">Logout</a></li>
+  <li><a [routerLink]="cartItem>0?'cart-page':null"> Cart({{cartItem}})</a></li>
+  <li><a routerLink="/my-order">My Orders</a></li>
+  <li><a routerLink="/">{{userName | titlecase}}</a></li>
+
+
+
+</ul>
+
+
+
+    <ul *ngSwitchCase="'seller'">
+
+    <li><a routerLink="/seller-home">Product List</a></li>
+  <li><a routerLink="/seller-add-product">Add Products</a> </li>
+  <li><a (click)="logOutSeller()" class="logout"> Logout </a></li>
+  <li><a routerLink="/">{{sellerName | titlecase}}</a></li>
+
+</ul>
+
+
+
+</div>
+
+</nav>
+
+<div  class="suggested-results" *ngIf="searchResults">
+
+  <li *ngFor="let item of searchResults">
+
+    <!-- thiar is some problrm two events called then we not use the link directly -->
+
+     <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>
+  </li>
+
+</div>

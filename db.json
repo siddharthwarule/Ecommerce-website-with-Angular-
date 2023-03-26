@@ -1,0 +1,145 @@
+{
+  "seller": [
+    {
+      "name": "Siddharth Warule",
+      "password": "sid",
+      "email": "sidwarule07@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Siddharth ",
+      "password": "sid",
+      "email": "sidwarule07@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "Siddharth ",
+      "password": "sid",
+      "email": "sidwarule07@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Siddharth ",
+      "password": "sid",
+      "email": "sidwarule07@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "Siddharth ",
+      "password": "sid",
+      "email": "sidwarule07@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Siddharth ",
+      "password": "123",
+      "email": "sidwarule07@gmail.com",
+      "id": 6
+    }
+  ],
+  "product": [
+    {
+      "name": "Apple iPhone 14 Pro Max ",
+      "price": "127000",
+      "color": "black",
+      "catagory": "Mobiles",
+      "descreption": "17.00 cm (6.7-inch) Super Retina XDR display featuring Always-On and ProMotion\nDynamic Island, a magical new way to interact with iPhone\n48MP Main camera for up to 4x greater resolution",
+      "image": "https://m.media-amazon.com/images/I/610pghkO81L._AC_UY327_FMwebp_QL65_.jpg",
+      "id": 4
+    },
+    {
+      "name": "Samsung Galaxy S23 5G ",
+      "price": "79000",
+      "color": "black",
+      "catagory": "Mobiles",
+      "descreption": "More light for your night - Get ready for a Gallery full of epic night shots everyone will want. Nightography's enhanced AI keeps details clear, so low light photos and videos will be bright and colorful from dusk to dawn and back again.",
+      "image": "https://m.media-amazon.com/images/I/61RZDb2mQxL._AC_UY327_FMwebp_QL65_.jpg",
+      "id": 5
+    },
+    {
+      "name": "vivo T1 x",
+      "price": "22000",
+      "color": "blue",
+      "catagory": "Mobiles",
+      "descreption": "4 GB RAM | 64 GB ROM\n16.71 cm (6.58 inch) Full HD+ Display\nQualcomm Snapdragon 680 Processor\n50MP + 2MP | 8MP Front Camera",
+      "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/952a7838-5abc-4aae-b3e2-31cb80d13a1422301400.jpg",
+      "id": 6
+    },
+    {
+      "name": "Apple Macbook Notebook",
+      "price": "81790",
+      "color": "black",
+      "catagory": "Laptop",
+      "descreption": "Apple 2020 MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD ",
+      "image": "https://m.media-amazon.com/images/I/71jG+e7roXL._SX679_.jpg",
+      "id": 7
+    },
+    {
+      "name": "Apple iPhone 14 Plus (128 GB, Purple)",
+      "price": "81790.00",
+      "color": "purple",
+      "catagory": "Mobiles",
+      "descreption": "iOS 15 Operating System\n5G Supported\nApple A15 Bionic Chipset\n6.7-inch OLED Display\n128 GB Internal Memory\nTriple 12MP Primary Camera\n",
+      "image": "https://th.bing.com/th?id=OPA.0nQ0P%2buBgjSeIQ474C474&w=592&h=550&o=5&dpr=1.3&pid=21.1",
+      "id": 8
+    },
+    {
+      "name": "OnePlus 10 Pro 5G (12 GB Ram ,256 GB Rom)",
+      "price": "71999",
+      "color": "green",
+      "catagory": "Mobiles",
+      "descreption": "OxygenOS based on Android™12\n6.7 inches (17.02 cm) 120Hz Fluid AMOLED with LTPO Display\nSnapdragon 8 Gen 1 Mobile Platform\nGPU: Adreno 730\n12GB LPDDR5\n256GB UFS 3.1 2-LANE\n5,000 mAh Battery\nDual Stereo Speakers",
+      "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/b8167606-d8d4-45c3-8118-3065033fa8f022021148.jpg",
+      "id": 9
+    },
+    {
+      "name": "Apple Watch Series 8 [GPS 41 mm] ",
+      "price": "41900",
+      "color": "black",
+      "catagory": "Mobiles",
+      "descreption": "WHY APPLE WATCH SERIES 8 — Your essential companion for a healthy life is now even more powerful. Advanced sensors provide insights to help you better understand your health. New safety features can get you help when you need it. The bright, Always-On Retina display is easy to read, even when your wrist is down.",
+      "image": "https://m.media-amazon.com/images/I/71ulah9iIwL._SX679_.jpg",
+      "id": 10
+    },
+    {
+      "name": "Samsung Galaxy S23 Ultra 5G (12GB, 256GB)",
+      "price": "124999",
+      "color": "black",
+      "catagory": "Mobiles",
+      "descreption": "\nBrand\tSamsung\nModel Name\tSamsung Galaxy S23 Ultra\nNetwork Service Provider\tUnlocked for All Carriers\nOS\tAndroid 13.0\nCellular Technology\t5G",
+      "image": "https://m.media-amazon.com/images/I/61imYpK33qL._SX679_.jpg",
+      "id": 11
+    },
+    {
+      "name": "OnePlus 11 5G (Titan Black, 16GB RAM, 256GB Storage)",
+      "price": "61999",
+      "color": "black",
+      "catagory": "Mobiles",
+      "descreption": "Camera: 50MP Main Camera with Sony IMX890 (OIS supported), 48MP Ultrawide Camera with Sony IMX581 (FOV: 115 degree) and 32MP Telephoto lens with Sony IMX709 (2X Optical Zoom); 16MP Front (Selfie) Camera with EIS support",
+      "image": "https://m.media-amazon.com/images/I/41eSQvTbsaL._SX300_SY300_QL70_FMwebp_.jpg",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "name": "sid",
+      "email": "siddharthwarule07@gmail.com",
+      "password": "sid",
+      "id": 1
+    },
+    {
+      "name": "Siddharth",
+      "email": "sonyawarule07@gmail.com",
+      "password": "sid",
+      "id": 2
+    },
+    {
+      "name": "Siddharth ",
+      "email": "sonyawarule07@gmail.com",
+      "password": "sid",
+      "id": 3
+    }
+  ],
+  "cart": [],
+  "orders": []
+}

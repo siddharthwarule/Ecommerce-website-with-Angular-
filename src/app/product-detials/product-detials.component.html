@@ -1,0 +1,56 @@
+
+
+<div class="row product-details top-class" *ngIf="productDetials">
+
+
+  <div class="col-sm-6 ">
+
+<img class="product-img" src="{{productDetials.image}}" alt="">
+  </div>
+
+  <div class="col-sm-6 detailsp">
+
+    <div class="details">
+
+      <div class="fs-1 product-name">{{productDetials.name}}</div>
+
+      <div class="color">
+        <h5>Color </h5>
+        <h5 [style.backgroundColor]="productDetials.color" class="product-color"> </h5>
+      </div>
+
+      <div class="fs-5 catagory"> Category : {{productDetials.catagory |titlecase}}</div>
+
+      <div class="fs-5 price"> Price : {{productDetials.price}}₹</div>
+
+       <div class="fs-5 descreption"><h5>Description :</h5>  {{productDetials.descreption}}</div>
+
+
+      <div class="quantity-group">
+
+        <button (click)="productQuantityHanddle('min')">-</button>
+        <input type="text" value="{{productQuantity}}" />
+        <button (click)="productQuantityHanddle('plus')">+</button>
+      </div>
+
+
+       <div class="buttons">
+         <button  class="btn btn-outline-primary">Buy Now</button>
+
+       <button *ngIf="!productRemove" (click)="addToCart()" class="btn btn-outline-primary">Add to Cart</button>
+       <button *ngIf="productRemove" (click)="RemoveToCart(this.productDetials.id)" class="btn btn-outline-primary">Remove to Cart</button>
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+</div>

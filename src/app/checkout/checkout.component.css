@@ -1,0 +1,58 @@
+.checkout
+{
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center; */
+
+  margin: 20px;
+}
+
+.checkout h1,h3
+{
+  text-align: center;
+
+}
+
+button{
+
+  background-color:blueviolet;
+  cursor: pointer;
+
+}
+
+.ng-invalid button{
+
+  background-color:rgb(235, 235, 236);
+
+  cursor: not-allowed;
+
+}
+.common-form a {
+
+  background-color: blueviolet;
+  cursor: pointer;
+
+
+}
+.errorMassage{
+
+  color: red;
+  text-align: center;
+  align-items: center;
+  /* margin-bottom: px; */
+
+}
+
+.forms
+{
+  margin-top: 50px;
+}
+.form-button{
+  width: 120px;
+
+}
+.total
+{
+  margin-top: 100px;
+  text-align: center;
+}

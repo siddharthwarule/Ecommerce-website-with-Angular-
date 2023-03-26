@@ -1,0 +1,95 @@
+<!-- <p>checkout works!</p> -->
+<div class="checkout">
+
+  <h1>CHECK-OUT</h1>
+
+  <p class="p_massage">{{orderMsg}}</p>
+
+  <div class="row forms">
+
+    <div class="col-sm-7">
+
+   <h3> Add Shipping Address</h3>
+
+     <form #orderData="ngForm" class="commmon-form" (ngSubmit)="orderNow(orderData.value)">
+
+
+      <input type="text"
+      class="form-input form-control"
+      placeholder="Enter Your Name"
+      name="name"
+      #name="ngModel"
+      ngModel
+      required
+      minlength="2"
+      >
+      <p *ngIf="name.invalid && name.touched"class="invalid-input">Please Enter The Valid Name</p>
+
+
+      <input type="email"
+      class="form-input form-control"
+      placeholder="Enter Your Email"
+      name="email"
+      #email="ngModel"
+      ngModel
+      required
+      email
+      >
+
+    <p *ngIf="email.invalid && email.touched"class="invalid-input">Please Enter The Valid Email</p>
+
+
+    <input type="text"
+    class="form-input form-control"
+    placeholder="Enter Shipping Address"
+    name="address"
+
+    #address="ngModel"
+    required
+    minlength="5"
+    maxlength="60"
+    ngModel
+    >
+
+  <p *ngIf="address.invalid && address.touched" class="invalid-input">Please Enter The Valid Address</p>
+
+
+
+  <input type="tel"
+  class="form-input form-control"
+  placeholder="Enter Contact Number"
+  name="contact"
+
+  #phone="ngModel"
+  required
+  minlength="10"
+  maxlength="12"
+  ngModel
+  >
+
+  <p *ngIf="phone.invalid && phone.touched" class="invalid-input">Please Enter The Valid Contact Number</p>
+
+
+    <button class="form-button"  [disabled]="orderData.invalid">Order Now</button>
+
+     </form>
+
+
+
+    </div>
+
+    <div class="col-sm-5 total">
+
+      <h4> Total Amount : {{totalPrice}}</h4>
+
+      <h5>Payment Method : <b>Pay On Dilivery.</b></h5>
+
+    </div>
+
+
+  </div>
+
+
+
+
+</div>

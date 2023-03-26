@@ -1,0 +1,26 @@
+<div class="row search-item topclass" *ngFor="let products of searchProducts">
+
+  <div class="col-sm-3 " >
+
+   <a routerLink="/product-details/{{products?.id}}">
+    <img class="searchimages" src="{{products?.image}}" alt="Product Image">
+  </a>
+  </div>
+
+
+  <div class="col-sm-8 details">
+    <a routerLink="/product-details/{{products?.id}}">
+
+      <h5>{{products?.name}}</h5>
+
+      <p class="Price"><b>Price : {{products?.price}}</b></p>
+      <p><span> Color : {{products?.color}} </span> <span>Category : {{products?.catagory}}</span> </p>
+      <p>A Product Search UI</p>
+    </a>
+
+    </div>
+
+
+
+</div>
+

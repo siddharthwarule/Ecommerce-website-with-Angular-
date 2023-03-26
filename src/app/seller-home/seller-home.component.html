@@ -1,0 +1,44 @@
+<!-- <p>seller-home works!</p> -->
+
+
+<div class="product-list">
+
+   <h3 class="p_massage">{{productDeleteMassage}}</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Color</th>
+        <th>Catagory</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+
+      <tr *ngFor="let data of productlist">
+
+        <td><img src="{{data.image}}"/></td>
+        <td>{{data.name}}</td>
+        <td>{{data.price}}</td>
+        <td>{{data.color}}</td>
+        <td>{{data.catagory}}</td>
+        <td>{{data.descreption}}</td>
+        <td><button class="btn btn-danger delete"  (click)="deleteProduct(data.id)"> <fa-icon [icon]="deleteIcon"></fa-icon>  Delete </button>
+
+         <a routerLink="/seller-update-product/{{data.id}}"><button class="btn btn-success edit"><fa-icon [icon]="editIcon"></fa-icon>  Edit </button>
+         </a>
+        </td>
+
+
+
+      </tr>
+    </tbody>
+  </table>
+
+</div>

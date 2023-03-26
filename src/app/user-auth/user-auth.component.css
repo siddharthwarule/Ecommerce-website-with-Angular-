@@ -1,0 +1,43 @@
+.header
+{
+
+  margin-bottom: 20px;
+  margin-top: 50px;
+  color: blueviolet;
+  text-align: center
+
+}
+
+.common-form a {
+
+  color: blueviolet;
+  cursor: pointer;
+
+}
+.errorMassage{
+
+  color: red;
+  text-align: center;
+  align-items: center;
+  /* margin-bottom: px; */
+
+}
+button{
+
+  background-color:blueviolet;
+  cursor: pointer;
+}
+/*
+button:disabled{
+  background-color: white;
+} */
+
+.ng-invalid button{
+
+  background-color:rgb(235, 235, 236);
+
+  cursor: not-allowed;
+
+}
+
+

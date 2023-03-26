@@ -1,0 +1,51 @@
+.my-order h1
+{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+
+
+}
+
+.my-order .order-img{
+
+  width: 90px;
+  /* height: 100px; */
+}
+.order-data{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top:15px;
+
+  margin-right: 1px;
+  border:1px solid #ddd;
+
+
+}
+
+.data{
+
+  margin-top: 30px;
+
+
+}
+
+.my-order button{
+
+  width: 115px;
+  height: 33px;
+  font-size: 15px;
+
+}
+
+.bold
+{
+  border:1px solid #ddd;
+
+  font-weight: bold;
+  font-size: larger;
+}
+.my-order{
+
+}

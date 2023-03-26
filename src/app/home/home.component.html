@@ -1,0 +1,146 @@
+<div class="rapper"><ngb-carousel *ngIf="crouserImg">
+    <ng-template *ngFor="let data of crouserImg" ngbSlide>
+      <div class="picsum-img-wrapper">
+        <a routerLink="/product-details/{{data.id}}">
+
+          <img src="{{data.image}}" alt="Random first slide" />
+
+        </a>
+      </div>
+      <div class="carousel-caption">
+        <h3>{{data.name}}</h3>
+        <p>{{data.descreption}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+
+<div class="product-list-wrapper">
+
+  <h1 class="product-heading">Trendy Products</h1>
+
+  <div class="row">
+
+    <!-- cut from their -->
+
+
+    <div class="col-sm-3" *ngFor="let item of trendyProducts">
+
+      <div class="product-item">
+
+        <a routerLink="/product-details/{{item.id}}">
+
+
+          <img src="{{item?.image}}" alt="image">
+
+        </a>
+
+        <div class="product-details">
+
+          <a routerLink="/product-details/{{item.id}}">
+
+            <h6 class="name-head">{{item?.name}}</h6>
+
+            <div class="product-price">
+
+              <h6 class="price">{{item.price}} ₹</h6>
+
+            </div>
+
+            <div class="product-color">
+
+              <h6>
+                {{item.color}}
+              </h6>
+
+
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="product-footer">
+
+          <a routerLink="/product-details/{{item.id}}">View Detials</a>
+          <a href="">Add to Cart</a>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <!-- end here start new from their -->
+
+  </div>
+</div>
+
+
+<!-- /////////////////////////////////////////////////////////// -->
+
+
+<div class="product-list-wrapper">
+
+  <h1 class="product-heading">ALL Products</h1>
+
+  <div class="row">
+
+    <!-- cut from their -->
+
+
+    <div class="col-sm-3" *ngFor="let item of allProduct">
+
+      <div class="product-item">
+
+        <a routerLink="/product-details/{{item.id}}">
+
+
+          <img src="{{item?.image}}" alt="image">
+
+        </a>
+
+        <div class="product-details">
+
+          <a routerLink="/product-details/{{item.id}}">
+
+            <h6 class="name-head">{{item?.name}}</h6>
+
+            <div class="product-price">
+
+              <h6 class="price">{{item.price}} ₹</h6>
+
+            </div>
+
+            <div class="product-color">
+
+              <h6>
+                {{item.color}}
+              </h6>
+
+
+            </div>
+
+          </a>
+
+        </div>
+
+        <div class="product-footer">
+
+          <a routerLink="/product-details/{{item.id}}">View Detials</a>
+          <a href="">Add to Cart</a>
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+    <!-- end here start new from their -->
+
+  </div>
+</div>
