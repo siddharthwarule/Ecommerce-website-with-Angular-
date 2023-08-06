@@ -6,6 +6,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { MyordersComponent } from './myorders/myorders.component';
+import { OrdersDataComponent } from './orders-data/orders-data.component';
 import { ProductDetialsComponent } from './product-detials/product-detials.component';
 import { SearchpageComponent } from './searchpage/searchpage.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
@@ -74,6 +75,12 @@ const routes: Routes = [
 {
   path:'my-order',
   component:MyordersComponent
+}
+,{
+
+  path:'user-order',
+  component:OrdersDataComponent
+
 }
 
 ]

@@ -1,6 +1,6 @@
 <nav class="nav">
 
-<h1 a class="namelogo btn btn-primery"  routerLink="/">E-COM</h1>
+<h1 a class="namelogo btn btn-primery"  routerLink="/">NXT-GEN</h1>
 <div class="nav-search" *ngIf="menuType=='default' || 'user' ">
 
   <input type="text" #search  (keyup)="searchData($event)" (blur)="hideSearch()" placeholder="Search for Products"/>
@@ -21,7 +21,7 @@
 
 <ul *ngSwitchCase="'user'">
   <li><a routerLink="/"> Home</a></li>
-  <li><a routerLink="/seller-auth">Seller</a> </li>
+  <li><a routerLink="/seller-auth">Admin</a> </li>
   <li><a (click)="userLogout()" class="logout">Logout</a></li>
   <li><a [routerLink]="cartItem>0?'cart-page':null"> Cart({{cartItem}})</a></li>
   <li><a routerLink="/my-order">My Orders</a></li>
@@ -39,6 +39,8 @@
   <li><a routerLink="/seller-add-product">Add Products</a> </li>
   <li><a (click)="logOutSeller()" class="logout"> Logout </a></li>
   <li><a routerLink="/">{{sellerName | titlecase}}</a></li>
+  <li><a routerLink="/user-order">Orders</a></li>
+
 
 </ul>
 

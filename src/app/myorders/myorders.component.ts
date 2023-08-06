@@ -15,7 +15,7 @@ export class MyordersComponent implements OnInit {
 
   ngOnInit(): void {
 
-   this.getOrderList()
+   this.getOrderList();
 
   }
 
@@ -24,7 +24,9 @@ export class MyordersComponent implements OnInit {
     orderId && this.product.deleteOrder(orderId).subscribe((result)=>{
 
         if(result){
-          this.getOrderList()
+
+          this.getOrderList();
+
         }
 
 

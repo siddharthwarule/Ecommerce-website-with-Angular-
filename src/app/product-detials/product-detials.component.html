@@ -35,7 +35,7 @@
 
 
        <div class="buttons">
-         <button  class="btn btn-outline-primary">Buy Now</button>
+         <button  class="btn btn-outline-primary"><a routerLink="/checkout">Buy Now</a></button>
 
        <button *ngIf="!productRemove" (click)="addToCart()" class="btn btn-outline-primary">Add to Cart</button>
        <button *ngIf="productRemove" (click)="RemoveToCart(this.productDetials.id)" class="btn btn-outline-primary">Remove to Cart</button>

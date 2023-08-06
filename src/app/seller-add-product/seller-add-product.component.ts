@@ -17,13 +17,12 @@ export class SellerAddProductComponent implements OnInit {
 
   }
 
-  addProducts(data:product){
+  addProducts(data:any){
 
      console.log(data);
 
-    
 
-     this.product.addproduct(data).subscribe((result)=>
+     this.product.addproduct(data).subscribe((result:any)=>
      {
        console.log(result);
 
@@ -31,11 +30,10 @@ export class SellerAddProductComponent implements OnInit {
 
        this.addProductMassage="Product Added Successfully";
 
-
-
       }
 
-      setTimeout(()=>this.addProductMassage=undefined,3000);
+      setTimeout(()=>this.addProductMassage=undefined,
+      3000);
 
      })
 

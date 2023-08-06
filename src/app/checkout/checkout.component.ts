@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { now } from 'mongoose';
 import { reduce } from 'rxjs';
 import { cart, order, orderData } from '../data-type';
 import { ProductService } from '../services/product.service';
+import {formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-checkout',
@@ -14,10 +16,22 @@ export class CheckoutComponent implements OnInit {
   totalPrice:undefined|number;
   cartData: undefined|cart[];
   orderMsg:string|undefined;
+  Now:any
 
-  constructor(private product:ProductService,private router:Router) { }
+  today= new Date();
+  jstoday = '';
+
+  constructor(private product:ProductService,private router:Router) {
+
+    this.jstoday = formatDate(this.today, 'dd-MM-yyyy hh:mm:ss a', 'en-US', '+0530');
+
+  }
 
   ngOnInit(): void {
+
+     this.Now =new Date()
+
+    console.log(now);
 
     this.product.currentCart().subscribe((result) => {
       let price = 0;
@@ -62,7 +76,10 @@ export class CheckoutComponent implements OnInit {
         ...data,
       totalprice : this.totalPrice,
         userId,
-        id:undefined
+        id:undefined,
+        date:this.jstoday
+
+
 
       }
       this.product.orderNow(orderData).subscribe((result)=>{

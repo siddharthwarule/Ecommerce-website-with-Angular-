@@ -26,6 +26,7 @@ export interface product{
   id:number;
   quantity:undefined|number;
   productId:undefined|number;
+  _id:undefined|number
 
 
 }
@@ -71,7 +72,8 @@ export interface orderData {
   contact:string,
   totalprice:number,
   userId:number,
-  id:undefined|number
+  id:undefined|number,
+  date:string
 
 }
 

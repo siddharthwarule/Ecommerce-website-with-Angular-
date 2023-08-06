@@ -1,8 +1,9 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { cart, order, orderData, product } from '../data-type';
-import { json } from 'express';
-import { Lexer } from '@angular/compiler';
+import { map } from 'rxjs/operators';
+// import { json } from 'express';
+
 
 @Injectable({
   providedIn: 'root',
@@ -14,15 +15,25 @@ export class ProductService {
 
   // to adding the product in server
 
-  addproduct(data: product) {
+  addproduct(data: any) {
     console.log('service called');
 
+    // return this.http.post('http://localhost:5000/product', data);
+
     return this.http.post('http://localhost:3000/product', data);
+
+
   }
 
   //to get the product from server for seller home page list call by seller home
   getProducts() {
     return this.http.get<product[]>('http://localhost:3000/product');
+
+    // let getProduct= this.http.get<product[]>('http://localhost:5000/');
+
+    // return getProduct;
+
+
   }
 
   // for delete the product call by seller home
@@ -30,6 +41,10 @@ export class ProductService {
     // console.log(id);
 
     return this.http.delete(`http://localhost:3000/product/${id}`);
+
+    // return this.http.delete(`http://localhost:5000/${id}`);
+
+
   }
 
   // get product for populated into the form called by seller-update-product component
@@ -43,10 +58,7 @@ export class ProductService {
   //put method get the id and object
 
   updateProduct(product: product) {
-    return this.http.put<product>(
-      `http://localhost:3000/product/${product.id}`,
-      product
-    );
+    return this.http.put<product>( `http://localhost:3000/product/${product.id}`,product);
   }
 
   // get some products for showing crowser in home-component called by  home-component
@@ -69,6 +81,9 @@ export class ProductService {
 
   getProductById(id: string) {
     return this.http.get<product>(`http://localhost:3000/product/${id}`);
+
+    // return this.http.get(`http://localhost:5000/product/${id}`);
+
   }
 
   //this add to cart functionality where called by product-detials-componant
